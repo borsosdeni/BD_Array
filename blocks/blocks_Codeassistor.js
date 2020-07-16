@@ -27,11 +27,9 @@ Blockly.Blocks['BD_Array_value_of'] = {
     this.appendDummyInput()
       .appendField("Value of")
       .appendField(new Blockly.FieldTextInput(""), "arr1")
-    //.appendField("At")
     this.appendValueInput("at")
       .setCheck("Number")
       .appendField(" at:");
-    //.appendField(new Blockly.FieldTextInput(""), "index2")
     this.setInputsInline(true);
     this.setOutput(true, null);
     this.setColour(120);
@@ -47,7 +45,6 @@ Blockly.Blocks['BD_Array_get'] = {
     this.appendDummyInput()
       .appendField("Set array ")
       .appendField(new Blockly.FieldTextInput(""), "arr1")
-    //.appendField("At")
     this.appendValueInput("index")
       .setCheck("Number")
       .appendField(" index");
@@ -55,7 +52,6 @@ Blockly.Blocks['BD_Array_get'] = {
 	this.appendValueInput("by")
       .setCheck("Number")
       .appendField(" by ");
-    //.appendField(new Blockly.FieldTextInput(""), "index2")
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
